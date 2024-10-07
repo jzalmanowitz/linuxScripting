@@ -1,0 +1,35 @@
+#!/bin/bash
+
+#where to put this...
+#... you sure are forgetful sometimes
+#nano /etc/update-motd.d/99-custom-motd
+#chmod +x /etc/update-motd.d/99-custom-motd
+
+echo ""
+echo ""
+echo ""
+echo "Welcome to my Raspberry Pi VPN Server"
+echo "... you sure are forgetful sometimes"
+echo ""
+echo "----------------------------------------"
+echo "Common WireGuard Commands:"
+echo "  - Start WireGuard: sudo wg-quick up wg0"
+echo "  - Restart WireGuard: sudo systemctl restart wg-quick@wg0"
+echo "  - Show WireGuard Status: sudo wg show"
+echo "  - Show the QR code to add to the Wireguard app: sudo pivpn -qr" 
+echo ""
+echo "Common PiVPN Commands:"
+echo "  - Show Connected Clients: pivpn -c"
+echo "  - Show PiVPN help menu: pivpn"
+echo ""
+echo "WireGuard Configuration File:"
+echo "  - Location: /etc/wireguard/wg0.conf"
+echo ""
+echo "WireGuard Log Files:"
+echo "  - Server Log: journalctl -xe | grep wg-quick@wg0"
+echo "  - Client Log: journalctl -xe | grep wg-quick@wg0-client"
+echo ""
+echo "----------------------------------------"
+echo ""
+echo ""
+echo ""
